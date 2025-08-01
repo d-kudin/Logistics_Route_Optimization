@@ -90,12 +90,15 @@ pytest test_generate_distance_matrix.py
 
 ### How to Run algorithms
 ---
+
 Run everything (distance matrix + both algorithms + benchmarking)
 ```
 python main.py
 ```
 ---
+
 Or run individual components:
+
 ---
 Generate distance matrix from coordinates:
 ```
