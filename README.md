@@ -135,3 +135,18 @@ Real driving times ensure realistic logistics approximations.
 You must be online for distance matrix generation via OpenRouteService.
 
 ---
+
+<img width="961" height="642" alt="image" src="https://github.com/user-attachments/assets/0625425f-bf2e-41e0-977a-7df0b94f0724" />
+
+---
+
+<img width="990" height="486" alt="image" src="https://github.com/user-attachments/assets/87a08118-3f4d-4485-ac23-59906a649680" />
+
+---
+
+<img width="1193" height="586" alt="image" src="https://github.com/user-attachments/assets/a0eadd3d-2d6b-4be8-a4ab-fa839e474b7e" />
+
+---
+
+
+
