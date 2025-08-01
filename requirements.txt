@@ -1,0 +1,12 @@
+# requirements.txt
+
+pandas
+requests
+networkx
+matplotlib
+contextily
+numPy
+python-dotenv
+tqdm
+pytest
+pyproj
