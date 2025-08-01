@@ -15,23 +15,7 @@ This project demonstrates route optimization algorithms (Ant Colony Optimization
 
 ## Project Structure
 
-Logistics Route Optimization/
-│
-├── algorithms/
-│ ├── ant_colony_with_map.py # ACO with real-time map
-│ ├── ant_colony_with_plot.py # ACO performance benchmarking
-│ └── nearest_neighbor_with_map.py # Nearest neighbor with map animation
-│
-├── data/
-│ └── data.csv # Input addresses and coordinates
-│
-├── output/ # Results: CSV, plots, summaries
-│
-├── generate_distance_matrix.py # Uses ORS API to create travel matrix
-├── main.py # Runs full pipeline (matrix + algorithms)
-├── requirements.txt # Required libraries
-└── README.md # Project overview
-
+<img width="495" height="332" alt="image" src="https://github.com/user-attachments/assets/6d10d81c-f5f8-46b4-8383-21c960b16582" />
 
 ## Tech Stack
 
@@ -49,7 +33,7 @@ Logistics Route Optimization/
 Download and unzip the project archive. Open the extracted folder in your preferred IDE (e.g., Visual Studio Code).
 ```
 #### OR
-```
+
 ### 1b. Clone the repository
 ```
 git clone https://github.com/d-kudin/Logistics_Route_Optimization.git
