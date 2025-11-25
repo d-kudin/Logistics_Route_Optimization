@@ -2,6 +2,53 @@
 
 This project demonstrates route optimization algorithms (Ant Colony Optimization and Nearest Neighbor) for urban logistics using real geographical coordinates and travel time data from the OpenRouteService API. It supports animated map visualizations and performance analysis.
 
+## Results
+
+**Dataset:** 50 sampled locations (Houston area). Travel-time matrix generated via OpenRouteService (`driving-car`), converted to minutes.
+
+**Baselines vs. ACO**
+
+- **Nearest Neighbor (NN) baseline:** `121.46` min  
+- **Ant Colony Optimization (ACO) best:** `102.10` min  
+- **Improvement:** `19.36` min (≈ **15.94%** shorter vs. NN)
+
+**Convergence & Runtime**
+
+- ACO converges quickly: major drop within the first ~15–20 iterations, then gradual refinement to ~102 min.  
+- Execution time per run on this dataset: **~1.7–31 s** depending on ants × iterations.
+
+**Top ACO configurations observed**
+
+| Ants | Iterations | Best travel time (min) | Exec time (s) |
+|-----:|-----------:|-----------------------:|--------------:|
+| 200  | 40         | **102.07**             | 12.80         |
+| 100  | 70         | **102.10**             | 31.12         |
+| 50   | 100        | **102.10**             | 7.74          |
+
+---
+
+<img width="961" height="642" alt="image" src="https://github.com/user-attachments/assets/0625425f-bf2e-41e0-977a-7df0b94f0724" />
+
+---
+
+<img width="990" height="486" alt="image" src="https://github.com/user-attachments/assets/87a08118-3f4d-4485-ac23-59906a649680" />
+
+---
+
+<img width="1193" height="586" alt="image" src="https://github.com/user-attachments/assets/a0eadd3d-2d6b-4be8-a4ab-fa839e474b7e" />
+
+---
+
+## Additional Notes:
+
+---
+
+If distance_matrix.csv has unusually large values (thousands of seconds), the system will automatically convert them to minutes.
+All visualizations use OpenStreetMap tiles via contextily.
+Real driving times ensure realistic logistics approximations.
+You must be online for distance matrix generation via OpenRouteService.
+
+---
 
 ## Features
 
@@ -123,30 +170,8 @@ python algorithms/ant_colony_with_plot.py
 
 All outputs are stored in output/
 
----
 
-## Additional Notes:
 
----
-
-If distance_matrix.csv has unusually large values (thousands of seconds), the system will automatically convert them to minutes.
-All visualizations use OpenStreetMap tiles via contextily.
-Real driving times ensure realistic logistics approximations.
-You must be online for distance matrix generation via OpenRouteService.
-
----
-
-<img width="961" height="642" alt="image" src="https://github.com/user-attachments/assets/0625425f-bf2e-41e0-977a-7df0b94f0724" />
-
----
-
-<img width="990" height="486" alt="image" src="https://github.com/user-attachments/assets/87a08118-3f4d-4485-ac23-59906a649680" />
-
----
-
-<img width="1193" height="586" alt="image" src="https://github.com/user-attachments/assets/a0eadd3d-2d6b-4be8-a4ab-fa839e474b7e" />
-
----
 
 
 
